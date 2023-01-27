@@ -5,11 +5,10 @@ html {
     scroll-behavior: smooth;
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins'sans-serif;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -64,5 +63,135 @@ html {
     --color-white: #fff;
     --color-black: #000;
     --color-success: #00b23d;
-    
+    --bg-color: #2D96C8;
+    --bg-color-hover: #063b53;
+}
+
+
+.navBar {
+    background: #FFFFFF;
+    box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.06);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 30px;
+}
+
+nav .logo {
+    width: 135px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.toggle {
+    display: none;
+}
+
+.navBar .nav-links li {
+    display: inline-block;
+    list-style: none;
+    padding: 10px 20px;
+}
+
+.navBar .nav-links li a {
+    text-decoration: none;
+    color: var(--color-black);
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.navBar .nav-links li a:hover {
+    color: var(--color-coral-600);
+    transition: .3s;
+}
+
+.navBar .nav-links li .btn-1 {
+    padding: 10px 25px;
+    border-radius: 30px;
+    color: var(--bg-color);
+    border: 1px solid var(--bg-color);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.navBar .nav-links li .btn-1:hover {
+    color: var(--bg-color-hover);
+    transition: .3s;
+}
+
+.navBar .nav-links li .btn-2 {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--bg-color);
+    color: var(--color-white);
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.navBar .nav-links li .btn-2:hover {
+    color: var(--color-light-grey-400);
+    transition: .3s;
+    background: var(--bg-color-hover);
+}
+
+@media screen and (max-width : 800px) {
+    .toggle {
+        position: relative;
+        display: block;
+        cursor: pointer;
+        font-size: 2rem;
+        z-index: 20;
+        color: var(--color-black);
+    }
+
+    .logo {
+        position: relative;
+        z-index: 20;
+    }
+
+    .ouvrir {
+        display: block;
+    }
+
+    .ferme {
+        display: none;
+    }
+
+    .open .ouvrir {
+        display: none;
+    }
+
+    .open .ferme {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 2rem;
+        background-color: var(--color-light-grey-300);
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+
+    .navBar .nav-links {
+        font-size: 1.2rem;
+    }
+
+    .open .nav-links {
+        margin-left: 0;
+    }
+
 }
