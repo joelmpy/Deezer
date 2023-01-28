@@ -497,6 +497,23 @@ header {
     padding: 0px 200px;
 }
 
+.container-catcher .btn-catcher {
+    margin: 40px;
+    width: 350px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    border-radius: 32px;
+    -webkit-box-shadow: 0 2px 12px rgb(0 0 0 / 14%);
+    box-shadow: 0 2px 12px rgb(0 0 0 / 14%);
+    color: #fff;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 15px 56px;
+}
+
 .catcher-image {
     background: url(./assets/image-catcher.jpg);
     background-position:center;
@@ -505,4 +522,76 @@ header {
     height: 100vh;
     margin: 0 auto;
     width: 80%;
+}
+
+/**************************** container-catcher-visual *******************************/
+
+.catcher-visual {
+    padding-top: 70px;
+    width: 1190px;
+    height: 815px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.catcher-left {
+    width: 50%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 5%;
+}
+
+.catcher-left .heading-catcher {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: -1px;
+    text-align: center;
+    color: var(--color-black);
+}
+
+.catcher-left p {
+    padding-top: 35px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: center;
+    width: 324px;
+}
+
+.catcher-left .btn-catcher-visual {
+    margin: 40px;
+    width: 324px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    border-radius: 32px;
+    -webkit-box-shadow: 0 2px 12px rgb(0 0 0 / 14%);
+    box-shadow: 0 2px 12px rgb(0 0 0 / 14%);
+    color: #fff;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 15px 56px;
+}
+
+.catcher-right {
+    width: 50%;
+    border-radius: 30px;
+    height: 600px;
+}
+
+
+.catcher-right .catcher-visual-image {
+    background: url(./assets/image-catcher-visual.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    height: 600px;
 }
