@@ -475,3 +475,34 @@ header {
     height: 150px;
     text-align: center;
 }
+
+
+/**************************** container-catcher *******************************/
+
+
+.container-catcher {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.container-catcher p  {
+    width: 70%;
+    text-align: center;
+    line-height: 24px;
+    letter-spacing: -1;
+    margin: 0px 0px 40px;
+    padding: 0px 200px;
+}
+
+.catcher-image {
+    background: url(./assets/image-catcher.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    height: 100vh;
+    margin: 0 auto;
+    width: 80%;
+}
