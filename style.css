@@ -269,6 +269,30 @@ header {
     background-color: var(--color-coral-900);
 }
 
+
+@media only screen and (max-width:767px) {
+    .content-hero .heading-1 {
+        font-size: 25px;
+        margin-bottom: 10px
+    }
+
+    .content-hero .heading-2 {
+        font-size: 40px;
+        line-height: 40px;
+        width: 50%;
+    }
+
+    .search-bar {
+        width: 100%;
+        max-width: 700px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        border-radius: 60px;
+        padding: 5px 5px;
+    }
+}
+
 /**************************** main *******************************/
 
 
@@ -279,11 +303,22 @@ header {
 
 .content-image {
     background: url(./assets/image-1.jpg);
-    background-position: center;
+    background-position: 50%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     height: 70vh;
     width: 100%;
+}
+
+@media screen and (max-width:767px) {
+    .container-image {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .conetnt-image {
+        height: 500px;
+    }
 }
 
 
@@ -291,8 +326,6 @@ header {
 
 #feature-info {
     width: 100%;
-    height: auto;
-    border-top: 1px dashed #000;
 }
 
 .feature-title {
@@ -368,7 +401,7 @@ header {
     }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 625px) {
 
     .container-info {
         width: 100%;
@@ -377,10 +410,19 @@ header {
     .feature-title {
         margin-bottom: 30px;
         padding: 0;
-        width: 100%;
         font-size: 40px;
-        line-height: 40px;
     }
+
+    .content-info .feature-sous-title {
+        font-size: 18px;
+        width: 400px;
+    }
+
+    .container-info p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
 }
 
 
@@ -409,18 +451,41 @@ header {
     line-height: 24px;
     letter-spacing: -1;
     margin: 0px 0px 40px;
-    padding: 0px 200px;
 }
 
 .tracks-image {
     background: url(./assets/imgae-2.jpg);
-    background-position: center;
+    background-position: 50%;
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 130vh;
-    margin: 0 auto;
-    width: 80%;
+    background-size: contain;
+    height: 70vh;
+    width: 100%;
 }
+
+
+@media only screen and (max-width: 625px) {
+
+    .container-striks .heading-2 {
+        font-size: 40px;
+        width: 400px;
+        padding-bottom: 20px;
+    }
+
+    .container-striks p {
+        width: 100%;
+        line-height: 24px;
+    }
+
+    .tracks-image {
+        background-position: 50%;
+        height: 500px;
+        width: 100%;
+    }
+
+}
+
+
+
 
 
 /**************************** container-playlists *******************************/
@@ -440,24 +505,45 @@ header {
     line-height: 24px;
     letter-spacing: -1;
     margin: 0px 0px 40px;
-    padding: 0px 200px;
 }
+
+
+@media only screen and (max-width: 625px) {
+    .container-playlists .heading-2 {
+        font-size: 40px;
+        width: 400px;
+        padding-bottom: 20px;
+    }
+
+    .container-playlists p {
+        width: 100%;
+        line-height: 24px;
+    }
+
+
+}
+
+
 
 /**************************** container-card *******************************/
 
 
 .container-card {
-    padding-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
+    width: 1200px;
     margin: 0 auto;
-    width: 1190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 50px 0 100px;
 }
 
 .content-card {
     width: 245px;
     height: 356px;
+    margin: 20px;
 }
 
 .content-card img {
@@ -474,6 +560,22 @@ header {
     width: 245px;
     height: 150px;
     text-align: center;
+}
+
+@media only screen and (max-width:725px) {
+
+    .container-card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+
+    .content-card img {
+        margin: 0 auto;
+    }
 }
 
 
@@ -494,7 +596,6 @@ header {
     line-height: 24px;
     letter-spacing: -1;
     margin: 0px 0px 40px;
-    padding: 0px 200px;
 }
 
 .container-catcher .btn-catcher {
@@ -516,13 +617,35 @@ header {
 
 .catcher-image {
     background: url(./assets/image-catcher.jpg);
-    background-position: center;
+    background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
-    margin: 0 auto;
-    width: 80%;
+    height: 70vh;
+    width: 100%;
 }
+
+
+@media only screen and (max-width :764px) {
+
+    .container-catcher .heading-2 {
+        font-size: 40px;
+        width: 400px;
+        padding-bottom: 20px;
+    }
+}
+
+.container-catcher p {
+    width: 100%;
+    line-height: 24px;
+}
+
+
+.catcher-image {
+    background-position: 50%;
+    height: 500px;
+    width: 100%;
+}
+
 
 /**************************** container-catcher-visual *******************************/
 
@@ -669,6 +792,8 @@ header {
     height: 19px;
     width: 102;
 }
+
+
 
 /**************************** container-faq *******************************/
 
@@ -874,6 +999,7 @@ footer {
     .list-icon ul li i {
         font-size: 40px;
     }
+
     .footer-bottom .icon-page {
         margin: 40px;
     }
