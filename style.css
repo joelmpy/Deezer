@@ -216,7 +216,8 @@ header {
 }
 
 .contanier-hero .content-hero {
-    width: 800px;
+    width:100%;
+    padding: 0;
 }
 
 .content-hero .heading-1 {
@@ -273,7 +274,8 @@ header {
 @media only screen and (max-width:767px) {
     .content-hero .heading-1 {
         font-size: 25px;
-        margin-bottom: 10px
+        margin-bottom: 10px;
+        padding: 0;
     }
 
     .content-hero .heading-2 {
@@ -405,6 +407,7 @@ header {
 
     .container-info {
         width: 100%;
+        padding: 0;
     }
 
     .feature-title {
@@ -617,7 +620,7 @@ header {
 
 .catcher-image {
     background: url(./assets/image-catcher.jpg);
-    background-position:center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 70vh;
@@ -657,7 +660,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 50px;
 }
 
 .catcher-left {
@@ -719,6 +721,24 @@ header {
     height: 600px;
 }
 
+
+@media only screen and (max-width :764px) {
+    .catcher-visual {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .catcher-left .heading-catcher {
+        padding-top: 40px;
+        font-size: 40px;
+        width: 400px;
+        padding-bottom: 20px;
+    }
+}
+
 /**************************** container-phone *******************************/
 
 
@@ -757,7 +777,6 @@ header {
 
 .container-title .btn-phone {
     font-size: 16px;
-    text-decoration: solid;
     color: var(--color-coral-700);
     font-weight: 400;
     padding-top: 35px;
@@ -792,6 +811,56 @@ header {
     height: 19px;
     width: 102;
 }
+
+
+@media only screen and (max-width: 625px) {
+
+    .box-phone {
+        width: 100%;
+        height: auto;
+    }
+    
+    .box-phone .container-title  {
+        padding-top: 30px;
+        width: 100%;
+    }
+    .box-phone .container-title .heading-phone {
+        margin-bottom: 30px;
+        padding: 0;
+        font-size: 40px;
+    }
+    
+    .box-phone .container-title p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .container-title .btn-phone {
+        font-size: 16px;
+        margin-bottom: 35px;
+    }
+    .container-phone {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .container-phone .phone-1 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .container-phone h3 {
+        padding-top: 20px;
+        font-size: 14px;
+    }
+    
+
+
+}
+
 
 
 
@@ -854,6 +923,15 @@ header {
     text-align: center;
 }
 
+@media only screen and (max-width: 625px) {
+    .box-faq {
+        height: auto;
+        width: 100%;
+    }
+    .container-faq .container-title {
+        font-size: 40px;
+    }
+}
 
 
 /**************************** footer *******************************/
